@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.Set;
@@ -58,7 +60,30 @@ public class LastWord58 {
 	
 	public static void main(String[] args){
 //		String[] chars2 = {"4", "13", "5", "*", "+"};
-		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		HashMap<Integer, String> map = new HashMap<>();
+		map.put(2, "qwe");
+		map.put(0, "asd");
+		map.put(1, "zxc");
+		map.put(8, "rty");
+//		for (Entry<Integer, String> i : map.entrySet()) {
+//			System.out.println(i.getKey());
+//			System.out.println(i.getValue());
+//		}
+//		Iterator<Entry<Integer, String>> iterator = map.entrySet().iterator();
+//		while(iterator.hasNext()) {
+//			Entry<Integer, String> entry = iterator.next();
+//			System.out.println(entry.getKey());
+//			System.out.println(entry.getValue());
+//		}
+		for(Integer i : map.keySet()) {
+			System.out.println(i);
+			System.out.println(map.get(i));
+		}
+		
+		
+		
+		
+		Integer aInteger;
 		LastWord58 a = new LastWord58();
 		ListNode aListNode  = new ListNode(1);
 		ListNode bListNode  = new ListNode(2);
@@ -78,6 +103,6 @@ public class LastWord58 {
 //		ListNode a1 = rotateRight(aListNode, 5);
 //		System.out.println(a1);
 		String aString = null;
-		System.out.println(aString);
+//		System.out.println(aString);
     }
 }
